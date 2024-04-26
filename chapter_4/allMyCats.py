@@ -18,4 +18,4 @@ def showCatNames():
 
 
 for name in showCatNames():
-    print("The cat names are: " + catNames)
+    print("The cat names are: " + name)
