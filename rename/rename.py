@@ -5,9 +5,10 @@ pasta = "C:\\Users\\miran\\OneDrive\\Python\\rename\\imagens_teste"
 
 try:
     # Lista todos os arquivos na pasta
-    arquivos = sorted([f for f in os.listdir(pasta) if f.lower().endswith(".jpg")])
+    arquivos = sorted([f for f in os.listdir(pasta)])
 
     # Renomeia os arquivos
+
     for i, nome_antigo in enumerate(arquivos):
         nome_novo = f"arquivo_{i+1:02d}.jpg"
         caminho_antigo = os.path.join(pasta, nome_antigo)
